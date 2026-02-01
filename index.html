@@ -3,18 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Snake Game</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    
-        <canvas id="gameCanvas" width="1000" height="550"></canvas>
+<div class="container">
 
-        <!-- Snake logo bottom right -->
-        <img src="logo.png" class="logo" alt="game logo">
-        <p style="color: width;" >LOGO TEST</p>
-    
+    <!-- Logo -->
+    <div class="logo-wrap">
+        <img src="logo-copy.jpg" class="snake-logo" alt="Snake Logo">
+    </div>
 
-    <script src="script.js"></script>
+    <!-- Score -->
+    <div id="score">Score: 0</div>
+
+    <!-- Game Canvas -->
+    <canvas id="gameCanvas" width="1000" height="550"></canvas>
+
+    <!-- Game Over Screen -->
+    <div id="gameOver" class="game-over hidden">
+        <div class="game-over-box">
+            <h2>Game Over</h2>
+            <button onclick="restartGame()">Replay</button>
+        </div>
+    </div>
+
+</div>
+
+<!-- JavaScript -->
+<script src="script.js" defer></script>
 </body>
 </html>
+
+    
